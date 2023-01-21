@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/4d02abcf66.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
 <body>
-
-    <div class="skill">
-        <div class="outer">
-            <div class="inner">
-            </div>
-        </div>
-    </div>
-
   <div id="whole">
     <div id="title">pomodoro</div>
 
     <div id="title2">
-      <div id="navigate">Pomodoro</div>
-      <div id="navigate">Short Break</div>
-      <div id="navigate">Long Break</div>
+      <div class="navigate changeColor" id="Pomodoro">Pomodoro</div>
+      <div class="navigate" id="shortBreak">Short Break</div>
+      <div class="navigate" id="longBreak">Long Break</div>
     </div>
 
     <div id="circle">
-        <div id="circle2">
-            <h1 id="display"></h1>
-            <button onclick="timer()">start</button>
+        <div class="outer">
+            <div class="inner">
+                <p id="time"></p>
+                <h3 class="Button" id="startButton" onclick="startfun()">start</h3>
+            </div>
         </div>
     </div>
-
     <div id="setting">
         <i class="fa-solid fa-gear"></i>
     </div>
   </div>
+  <div id="settingBox">
+    <div id="top">
+       <h2>Settings</h2>
+        <span id="closeMark">&times</span>
+       </div>
+       <div id="second">
+        <span id="cho">TIME (MINUTES)</span>
+        <div id="inputBox">
+            <div id="feed">
+                <label>pomodoro </label>
+                <label>short break</label>
+                <label>long break</label>
+               
+            </div>
+            
+            <div id="feed">
+                <input type="number" value="25" class="inputBox" id="pomoValue">
+                <input type="number" value="5" class="inputBox" id="shortValue">
+                <input type="number" value="10" class="inputBox" id="longValue">
+            </div>
+                </div>         
+       </div>
+       <div id="third">
+        <div id="color">FONT</div>
+        <div id="fontsBox">
+            <div id="fst" class=" fontBoxStyle fontBoxStyle1">Aa</div>
+            <div id="sec" class="fontBoxStyle">Aa</div>
+            <div id="thi" class="fontBoxStyle">Aa</div>
+        </div>
+       </div>
+       <div id="fourth">
+        <div id="color">COLOR</div>
+        <div id="fontsBox">
+           <div id="red"><i class="fa-solid fa-check "></i></div>
+           <div id="blue"><i class="fa-solid fa-check hi"></i></div>
+           <div id="purple"><i class="fa-solid fa-check hi"></i></div>
+        </div>
+       </div>
+       <div id="five">
+        <button>Apply</button>
+       </div>
+</div>
     <script src="script.js"></script>
 
 </body>
